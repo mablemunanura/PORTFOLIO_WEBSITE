@@ -26,16 +26,19 @@ function Hero() {
           </p>
 
           <div className="mt-8 flex gap-4 w-90">
-            <div
+            <a
+              href="/MABLE TUSIIME (CV).pdf"
+              download="MABLE TUSIIME (CV).pdf"
               className="flex-1 px-6 py-3 rounded-md bg-[#BB9476] text-white hover:text-[#264E36] hover:font-semibold shadow flex items-center justify-center"
             >
               Download CV
-            </div>
-            <div
-              className="flex-1 px-6 py-3 rounded-md bg-[#264E36] text-white hover:text-[#e2bda0] hover:font-semibold shadow flex items-center justify-center"
+            </a>
+            <a
+              href="#contact"
+              className="flex-1 px-6 py-3 rounded-md bg-[#264E36] text-white hover:text-[#BB9476] hover:font-semibold shadow flex items-center justify-center"
             >
               Hire now
-            </div>
+            </a>
           </div>
         </div>
       </div>
