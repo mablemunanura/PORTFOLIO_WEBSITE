@@ -35,7 +35,7 @@ function Hero() {
             </a>
             <a
               href="mailto:mablemunanura@gmail.com?subject=Hire%20Mable%20Tusiime&body=Hi%20Mable,%0A%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you."
-              className="flex-1 px-6 py-3 rounded-md bg-[#264E36] text-white hover:text-[#BB9476] hover:font-semibold shadow flex items-center justify-center"
+              className="flex-1 px-6 py-3 rounded-md bg-[#264E36] text-white hover:text-[#BB9476]! hover:font-semibold shadow flex items-center justify-center"
             >
               Hire now
             </a>
