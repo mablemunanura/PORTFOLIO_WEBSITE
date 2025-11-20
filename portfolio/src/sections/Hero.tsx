@@ -9,7 +9,7 @@ function Hero() {
       <img
         src={bgImg}
         alt="hero background"
-        className="absolute top-0 right-0 h-full w-full object-cover z-0"
+        className="absolute top-0 right-0 h-full w-full object-cover z-0 sm:object-right-center"
       />
 
       {/* main content */}
@@ -25,17 +25,17 @@ function Hero() {
             Over 2 years experience crafting innovative software solutions
           </p>
 
-          <div className="mt-8 flex gap-4 w-90">
+          <div className="mt-8 flex gap-3 w-70 sm:w-90">
             <a
               href="/MABLE TUSIIME (CV).pdf"
               download="MABLE TUSIIME (CV).pdf"
-              className="flex-1 px-6 py-3 rounded-md bg-[#BB9476] text-white hover:text-[#264E36] hover:font-semibold shadow flex items-center justify-center"
+              className="flex-1 px-3 py-2.5 rounded-md bg-[#BB9476] text-white hover:text-[#264E36] hover:font-semibold shadow flex items-center justify-center"
             >
               Download CV
             </a>
             <a
               href="mailto:mablemunanura@gmail.com?subject=Hire%20Mable%20Tusiime&body=Hi%20Mable,%0A%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you."
-              className="flex-1 px-6 py-3 rounded-md bg-[#264E36] text-white hover:text-[#BB9476]! hover:font-semibold shadow flex items-center justify-center"
+              className="flex-1 px-3 py-2.5 rounded-md bg-[#264E36] text-white hover:text-[#BB9476]! hover:font-semibold shadow flex items-center justify-center"
             >
               Hire now
             </a>
