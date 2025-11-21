@@ -9,7 +9,7 @@ function Hero() {
       <img
         src={bgImg}
         alt="hero background"
-        className="absolute top-0 right-0 h-screen w-full object-cover object-[60%_center] z-0 scale-110 sm:object-right-center"
+        className="absolute top-0 right-0 h-screen w-full object-cover object-[55%_center] z-0 scale-110 sm:object-right-center"
       />
 
       {/* main content */}
