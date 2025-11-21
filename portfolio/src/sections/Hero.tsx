@@ -21,7 +21,7 @@ function Hero() {
           <p className="mt-2 text-xl md:text-xl uppercase tracking-wider text-gray-800">
             SOFTWARE DEVELOPER
           </p>
-          <p className="mt-4 text-md w-60 md:text-lg md:w-xl text-gray-700">
+          <p className="mt-4 text-md w-60 md:text-lg md:w-xl text-[#1a0e06]">
             Over 2 years experience crafting innovative software solutions
           </p>
 
