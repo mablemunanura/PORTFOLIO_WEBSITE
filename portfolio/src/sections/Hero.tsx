@@ -9,23 +9,23 @@ function Hero() {
       <img
         src={bgImg}
         alt="hero background"
-        className="absolute top-0 right-0 h-full w-full object-cover z-0 sm:object-right-center"
+        className="absolute top-0 right-0 h-screen w-full object-cover object-[60%_center] z-0 scale-110 sm:object-right-center"
       />
 
       {/* main content */}
       <div className="relative z-20 flex items-center h-full">
         <div className="max-w-xl mx-6 md:mx-32">
-          <h1 className="text-7xl md:text-8xl font-bold italic text-[#174d36]">
+          <h1 className="text-6xl md:text-7xl font-bold text-[#174d36] italic">
             Mable Tusiime
           </h1>
-          <p className="mt-2 text-xl md:text-xl uppercase tracking-widest">
+          <p className="mt-2 text-xl md:text-xl uppercase tracking-wider text-gray-800">
             SOFTWARE DEVELOPER
           </p>
-          <p className="mt-4 text-lg text-gray-700">
+          <p className="mt-4 text-md w-60 md:text-lg md:w-xl text-gray-700">
             Over 2 years experience crafting innovative software solutions
           </p>
 
-          <div className="mt-8 flex gap-3 w-70 sm:w-90">
+          <div className="mt-8 flex gap-3 w-71 sm:w-91">
             <a
               href="/MABLE TUSIIME (CV).pdf"
               download="MABLE TUSIIME (CV).pdf"
