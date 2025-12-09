@@ -10,7 +10,7 @@ export default function Navbar() {
   const [tempActive, setTempActive] = useState<string | null>(null)
 
   const navLinks = [
-    { name: 'Home', path: '/' },
+    { name: 'Home', path: '/home' },
     { name: 'About', path: '/about' },
     { name: 'Portfolio', path: '/portfolio' },
     { name: 'Skills', path: '/skills' },
@@ -26,13 +26,17 @@ export default function Navbar() {
     setTimeout(() => {
       setToast('')
       setTempActive(null)
-    }, 2200)
+    }, 1000)
   }
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#BB9476]/40 backdrop-blur-md shadow-md">
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-md shadow-md transition 
+        ${location.pathname === '/home' ? 'bg-transparent' : 'bg-[#BB9476]/80'}
+      `}
+    >
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 md:px-12 py-3">
-        {/* Logo (small) */}
+        {/* Logo */}
         <h2 className="text-md md:text-xl font-semibold text-black">
           Mable <span className="text-[#264E36]">Tusiime</span>
         </h2>
@@ -48,7 +52,8 @@ export default function Navbar() {
                 aria-current={isActive ? 'page' : undefined}
                 onClick={(e: MouseEvent<HTMLAnchorElement>) => {
                   setOpen(false)
-                  if (link.path !== '/') {
+                  const allowed = ["/home", "/about"]
+                  if (!allowed.includes(link.path)) {
                     e.preventDefault()
                     showComingSoon(link.name, link.path)
                   }
@@ -78,7 +83,10 @@ export default function Navbar() {
 
       {/* mobile menu */}
       {open && (
-        <div className="menu md:hidden absolute top-full left-0 right-0 bg-[#867f7fde]/95 backdrop-blur-md! z-40" style={{ backdropFilter: 'blur(10px)' }}>
+        <div
+          className="menu md:hidden absolute top-full left-0 right-0 bg-[#867f7fde]/95 backdrop-blur-md! z-40"
+          style={{ backdropFilter: 'blur(10px)' }}
+        >
           <div className="flex flex-col items-center gap-4 py-8">
             {navLinks.map((link) => {
               const isActive = location.pathname === link.path || tempActive === link.path
