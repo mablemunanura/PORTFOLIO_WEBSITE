@@ -97,7 +97,8 @@ export default function Navbar() {
                   aria-current={isActive ? 'page' : undefined}
                   onClick={(e: MouseEvent<HTMLAnchorElement>) => {
                     setOpen(false)
-                    if (link.path !== '/') {
+                    const allowed = ["/home", "/about"]
+                    if (!allowed.includes(link.path)) {
                       e.preventDefault()
                       showComingSoon(link.name, link.path)
                     }
