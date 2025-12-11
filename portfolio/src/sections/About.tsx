@@ -17,7 +17,7 @@ function About() {
             About
         </div>
         <div>
-            <table className="border-separate border-spacing-y-6 [&_th]:text-left">
+            <table className="border-separate border-spacing-y-4 [&_th]:text-left">
                 <tr> 
                     <td className='align-middle'>
                         <span className="text-[#BB9476] text-4xl font-bold mr-6 ">.</span> 
@@ -68,6 +68,25 @@ function About() {
                     <td>Available </td>
                 </tr>
             </table>
+        </div>
+
+        <div className='flex flex-row gap-x-40 mt-8'>
+            <div className="">
+                <h1 className="text-[#BB9476] text-7xl font-bold">
+                5+
+                </h1> 
+                <p className="text-[#264E36] text-2xl">
+                Projects <br></br> worked on
+                </p>
+            </div>
+            <div className="">
+                <h1 className="text-[#BB9476] text-7xl font-bold">
+                2+
+                </h1> 
+                <p className="text-[#264E36] text-2xl">
+                Years of <br></br> experience
+                </p>
+            </div>
         </div>
       </div>
 
