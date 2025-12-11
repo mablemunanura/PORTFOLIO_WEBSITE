@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 a {
@@ -21,7 +21,6 @@ div.menu{
 }
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -41,6 +40,19 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+th {
+  color: rgb(20, 2, 2);
+  font-weight: bold;
+  font-family: 'Poppins';
+  width: 150px;
+}
+
+td {
+  color: #828282;
+  font-weight: 500;
+  font-family: 'Poppins' !important;
 }
 
 @media (prefers-color-scheme: light) {
