@@ -3,7 +3,7 @@ import bgImg from '../assets/About page bg.png'
 function About() {
 
   return (
-    <section className="relative w-screen h-screen overflow-scroll">
+    <section className="relative w-screen h-screen overflow-hidden">
       
       {/* background image */}
       <img
@@ -14,7 +14,7 @@ function About() {
           object-[55%_center]
           z-0
           
-          max-sm:scale-95
+          max-sm:scale-100
           sm:object-right
         "
       />
@@ -104,19 +104,19 @@ function About() {
             
             md:flex-row md:gap-x-40
 
-            max-md:flex-col max-md:gap-y-10 max-md:text-center
+            max-md:flex-row max-md:gap-y-10 max-md:text-center gap-x-7 
           "
         >
           <div>
-            <h1 className="text-[#BB9476] text-7xl font-bold">5+</h1>
-            <p className="text-[#264E36] text-2xl">
+            <h1 className="text-[#BB9476] text-7xl font-bold max-md:text-6xl">5+</h1>
+            <p className="text-[#264E36] text-2xl max-md:text-xl">
               Projects <br/> worked on
             </p>
           </div>
 
           <div>
-            <h1 className="text-[#BB9476] text-7xl font-bold">2+</h1>
-            <p className="text-[#264E36] text-2xl">
+            <h1 className="text-[#BB9476] text-7xl font-bold max-md:text-6xl">2+</h1>
+            <p className="text-[#264E36] text-2xl  max-md:text-xl">
               Years of <br/> experience
             </p>
           </div>

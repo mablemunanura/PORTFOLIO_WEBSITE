@@ -1,18 +1,13 @@
 import './App.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Hero from './sections/Hero.tsx'
-import About from './sections/About.tsx'
+import { BrowserRouter as Router } from 'react-router-dom'
 import Navbar from './components/Navbar.tsx'
+import Portfolio from './components/Portfolio.tsx'
 
 function App() {
   return (  
     <Router>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Hero />} />
-        <Route path="/home" element={<Hero />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
+      <Portfolio/>
     </Router>
   )
 }
