@@ -24,7 +24,7 @@ export default function Navbar() {
     const handleScroll = () => {
       const scrolled = window.scrollY
       setAtTop(scrolled < 50)
-      setShowScrollTop(scrolled > 200)
+      setShowScrollTop(scrolled > 50)
 
       // Update active section
       let currentSection = 'home'
@@ -149,7 +149,7 @@ export default function Navbar() {
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 p-3 rounded-full bg-[#264E36] text-white shadow-lg hover:bg-[#1e3c26] transition"
+          className="fixed bottom-8 right-8 p-3 z-100 rounded-full bg-[#264E36] text-white shadow-lg hover:bg-[#1e3c26] transition"
           aria-label="Scroll to top"
         >
           <ChevronUp className="w-5 h-5" />

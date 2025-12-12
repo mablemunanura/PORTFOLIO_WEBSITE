@@ -4,11 +4,11 @@ import About from '../sections/About';
 function Portfolio() { 
 
   return (
-    <div className="scroll-smooth overflow-hidden">
-      <section id="home" className='overflow-hidden'>
+    <div className="scroll-smooth overflow-x-hidden">
+      <section id="home" className='overflow-x-hidden'>
         <Hero/>
       </section>
-      <section id="about" className='overflow-hidden'>
+      <section id="about" className='overflow-x-hidden'>
         <About/>
       </section>
     </div>
