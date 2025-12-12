@@ -2,6 +2,13 @@ import { ChevronDown } from 'lucide-react'
 import bgImg from '../assets/Hero page bg.png'
 
 function Hero() {
+  // scroll handler
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById('about')
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
 
   return (
     <section className="relative w-screen h-screen overflow-hidden">
@@ -43,15 +50,16 @@ function Hero() {
         </div>
       </div>
 
-      <a
-        href="/about"
+      {/* Scroll down chevron */}
+      <button
+        onClick={scrollToAbout}
         aria-label="Scroll down"
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-30"
       >
         <div className="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-end justify-center shadow-lg">
           <ChevronDown className="w-8 h-8 text-[#264E36] animate-bounce" />
         </div>
-      </a>
+      </button>
     </section>
   )
 }
