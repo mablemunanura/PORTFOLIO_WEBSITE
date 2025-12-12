@@ -44,7 +44,7 @@ function Hero() {
       </div>
 
       <a
-        href="#about"
+        href="/about"
         aria-label="Scroll down"
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-30"
       >
