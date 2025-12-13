@@ -58,7 +58,7 @@ function Skills() {
                 {/* Title */}
                 <div className="mb-2">
                     {/*<div className="h-2 w-2 rounded-full bg-[#BB9476]"></div>*/}
-                    <p className="font-semibold text-lg max-sm:text-base">
+                    <p className="font-semibold text-lg text-black max-sm:text-base">
                         {skill.title}{' '}
                         {skill.description && (
                             <span className="font-normal text-gray-500 text-sm max-sm:text-xs">
