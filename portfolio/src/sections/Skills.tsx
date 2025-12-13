@@ -40,10 +40,10 @@ const skills: Skill[] = [
 function Skills() {
 
   return (
-    <section className="relative w-screen h-screen overflow-hidden bg-[#f7f5f3] px-6 md:px-20 py-16">
+    <section className="relative w-screen h-screen overflow-x-hidden overflow-y-scroll bg-[#f7f5f3] px-6 md:px-20 py-16">
 
         {/* Title */}
-        <div className="mt-10 mb-15 font-bold text-3xl text-[#264E36] text-shadow-lg text-center">
+        <div className="mt-10 mb-10 font-bold text-3xl text-[#264E36] text-shadow-lg text-center">
           Skills
         </div>
 
@@ -57,11 +57,11 @@ function Skills() {
             <div key={index}>
                 {/* Title */}
                 <div className="mb-2">
-                    <div className="h-2 w-2 rounded-full bg-[#BB9476]"></div>
-                    <p className="font-semibold text-lg">
+                    {/*<div className="h-2 w-2 rounded-full bg-[#BB9476]"></div>*/}
+                    <p className="font-semibold text-lg max-sm:text-base">
                         {skill.title}{' '}
                         {skill.description && (
-                            <span className="font-normal text-gray-500 text-sm">
+                            <span className="font-normal text-gray-500 text-sm max-sm:text-xs">
                                 ({skill.description})
                             </span>
                         )}
@@ -70,10 +70,12 @@ function Skills() {
 
                 {/* Progress bar */}
                 <div className="flex items-center gap-4">
-                    <div className="w-full h-2 bg-gray-300 rounded-full overflow-hidden">
+                    <div className="w-full h-2.5 bg-gray-300 rounded-full overflow-hidden
+                    max-sm:h-1.5">
                         <div className="h-full bg-[#BB9476] rounded-full" style={{width: `${skill.level}%` }}></div>
                         <span className="text-md font-medium text-gray-700">{skill.level}%</span>
                     </div>
+                    <span className="text-md font-medium text-gray-600 max-sm:text-sm">{skill.level}%</span>
                 </div>
             </div>
             ))}    
