@@ -88,7 +88,7 @@ export default function Navbar() {
                   className={`text-sm font-normal transition px-2 py-1 rounded ${
                     isActive
                       ? 'text-[#264E36]! font-semibold'
-                      : 'text-white hover:text-[#264E36]! hover:font-semibold'
+                      : 'text-white hover:text-[#264E36]! hover:font-semibold transition'
                   }`}
                 >
                   {link.name}
