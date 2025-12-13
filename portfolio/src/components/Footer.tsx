@@ -21,19 +21,28 @@ export default function Footer(){
                 </div>
 
                 {/* Social icons */}
+                {/* CENTER */}
                 <div className="flex flex-col items-center">
-                    <div className="flex gap-4 mb-4">
-                        <Icon><Github size={20} /> </Icon>
-                        <Icon><Mail size={20} /> </Icon>
-                        <Icon><Linkedin size={20} /> </Icon>
-                        <Icon><Instagram size={20} /> </Icon>
-                    </div>
-                    {/* Copyright */}
-                    <p className="text-sm text-gray-200 text-center leading-relaxed mt-6">
-                        2025 Copyright Mable. All Rights Reserved <br/>
-                        Designed by Mable Tusiime
-                    </p>
-                </div>                 
+                <div className="flex gap-4 mb-4">
+                    <a href="https://github.com/mablemunanura" target="_blank" rel="noopener noreferrer">
+                    <Icon><Github size={20} /></Icon>
+                    </a>
+                    <a href="mailto:mablemunanura@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <Icon><Mail size={20} /></Icon>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mable-tusiime-a35374323/" target="_blank" rel="noopener noreferrer">
+                    <Icon><Linkedin size={20} /></Icon>
+                    </a>
+                    <a href="https://www.instagram.com/_.munanura._?igsh=MTZ3YXl4ZTFvM2w0cQ==" target="_blank" rel="noopener noreferrer">
+                    <Icon><Instagram size={20} /></Icon>
+                    </a>
+                </div>
+                <p className="text-sm text-gray-400 text-center leading-relaxed">
+                    © {new Date().getFullYear()} Mable. All Rights Reserved
+                    <br />
+                    Designed by Mable Tusiime
+                </p>
+                </div>                
 
                 {/* Quick links */}
                 <div className="md:text-right mt-8 md:mt-0">
@@ -53,10 +62,10 @@ export default function Footer(){
     );
 }
 
-function Icon({children}: {children:React.ReactNode}){
-    return(
-        <span className="p-2 rounded-full border border0-gray-400 hover:bg-[#BB9476] transition cursor-pointer">
-            {children}
-        </span>
-    )
+function Icon({ children }: { children: React.ReactNode }) {
+  return (
+    <span className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-400 hover:bg-[#BB9476] transition cursor-pointer">
+      {children}
+    </span>
+  );
 }

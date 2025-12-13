@@ -41,7 +41,7 @@ function Hero() {
               Download CV
             </a>
             <a
-              href="mailto:mablemunanura@gmail.com?subject=Hire%20Mable%20Tusiime&body=Hi%20Mable,%0A%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you."
+              href="mailto:mablemunanura@gmail.com?subject=Collaborate%20With%20Mable%20Tusiime&body=Hi%20Mable,%0A%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you."
               className="flex-1 px-3 py-2.5 rounded-md bg-[#264E36] text-white hover:text-[#BB9476]! hover:font-semibold shadow flex items-center justify-center"
             >
               Collaborate
