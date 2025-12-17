@@ -1,4 +1,5 @@
 import {Github, Linkedin, Instagram, Mail} from "lucide-react";
+import type React from "react";
 
 export default function Footer(){
     const quickLinks = [
@@ -24,23 +25,28 @@ export default function Footer(){
                 {/* CENTER */}
                 <div className="flex flex-col items-center">
                 <div className="flex gap-4 mb-4">
+
                     <a href="https://github.com/mablemunanura" target="_blank" rel="noopener noreferrer">
-                    <Icon><Github size={20} /></Icon>
+                    <Icon label="Github"><Github size={20} /></Icon>
                     </a>
+
                     <a href="mailto:mablemunanura@gmail.com" target="_blank" rel="noopener noreferrer">
-                    <Icon><Mail size={20} /></Icon>
+                    <Icon label="Mail"><Mail size={20} /></Icon>
                     </a>
+
                     <a href="https://www.linkedin.com/in/mable-tusiime-a35374323/" target="_blank" rel="noopener noreferrer">
-                    <Icon><Linkedin size={20} /></Icon>
+                    <Icon label="LinkedIn"><Linkedin size={20} /></Icon>
                     </a>
+
                     <a href="https://www.instagram.com/_.munanura._?igsh=MTZ3YXl4ZTFvM2w0cQ==" target="_blank" rel="noopener noreferrer">
-                    <Icon><Instagram size={20} /></Icon>
+                    <Icon label="Instagram"><Instagram size={20} /></Icon>
                     </a>
+
                 </div>
-                <p className="text-sm text-gray-400 text-center leading-relaxed">
+                <p className="text-sm text-gray-300 text-center leading-relaxed">
                     © {new Date().getFullYear()} Mable. All Rights Reserved
                     <br />
-                    Designed by Mable Tusiime
+                    <span className="text-xs">Designed by Mable Tusiime</span>
                 </p>
                 </div>                
 
@@ -62,10 +68,20 @@ export default function Footer(){
     );
 }
 
-function Icon({ children }: { children: React.ReactNode }) {
+type IconProps = {
+    label: string
+    children: React.ReactNode
+}
+
+function Icon({ children, label }: IconProps) {
   return (
-    <span className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-400 hover:bg-[#BB9476] transition cursor-pointer">
+    <span title={label} className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-400 hover:bg-[#BB9476] transition cursor-pointer">
       {children}
+      <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 opacity-0
+      group-hover:opacity-100 scale-95 group-hover:scale-100 bg-[#3b2a1a] text-white text-xs
+      px-2 py-1 rounded-md whitespace-nowrap pointer-events-none transition-all duration-200 z-50">
+        {label}
+      </span>
     </span>
   );
 }
