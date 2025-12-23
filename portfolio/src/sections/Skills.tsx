@@ -1,88 +1,138 @@
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaReact,
+  FaJava,
+  FaPython,
+  FaDatabase,
+  FaCode,
+} from "react-icons/fa";
+import { SiGo, SiKotlin } from "react-icons/si";
+import { Figma, Braces } from "lucide-react";
+
 type Skill = {
-    title: string
-    description?: string
-    level: number
-}
+  title: string;
+  description?: string;
+  level: number;
+};
 
 const skills: Skill[] = [
-    {
-        title: 'Front End Development',
-        description: 'HTML, CSS, Javascript, React, Laravel',
-        level: 100,
-    },
-    {
-        title: 'Back End Development',
-        description: 'Java, Python, Golang',
-        level: 90,
-    },
-    {
-        title: 'UI/UX Design',
-        description: 'Figma Design, UX Research',
-        level: 90,
-    },
-    {
-        title: 'Requirements Engineering',
-        description: 'Requirements gathering, analysis and documentation',
-        level: 80,
-    },
-    {
-        title: 'Database Management',
-        description: 'MySQL, PostgreSQL',
-        level: 90,
-    },
-    {
-        title: 'Mobile App Development',
-        description: 'Kotlin',
-        level: 80,
-    },
-]
+  { title: "Front End Development", description: "HTML, CSS, JavaScript, React", level: 100 },
+  { title: "Back End Development", description: "Java, Python, Golang", level: 90 },
+  { title: "UI/UX Design", description: "Figma Design, UX Research", level: 90 },
+  { title: "Requirements Engineering", description: "Requirements gathering & documentation", level: 80 },
+  { title: "Database Management", description: "MySQL, PostgreSQL", level: 90 },
+  { title: "Mobile App Development", description: "Kotlin", level: 80 },
+];
+
+const techIcons = [
+  FaCode,
+  Braces,
+  FaHtml5,
+  FaCss3Alt,
+  FaReact,
+  FaJava,
+  FaPython,
+  SiGo,
+  SiKotlin,
+  FaDatabase,
+  Figma,
+];
 
 function Skills() {
+  const leftColumnIcons = techIcons.slice(0, 6);
+  const rightColumnIcons = techIcons.slice(6);
 
   return (
-    <section className="relative w-screen h-screen overflow-x-hidden overflow-y-scroll bg-[#f7f5f3] px-6 md:px-20 py-16">
+    <section className="w-screen min-h-screen bg-[#f7f5f3] px-6 md:px-20 py-16">
+      <h2 className="mb-14 text-3xl font-bold text-center text-[#264E36]">
+        Skills
+      </h2>
 
-        {/* Title */}
-        <div className="mt-10 mb-10 font-bold text-3xl text-[#264E36] text-shadow-lg text-center">
-          Skills
-        </div>
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-16">
 
-        {/* Stats Section */}
-        <div
-          className="
-            space-y-10 max-w-4xl mx-auto
-          "
-        >
-            {skills.map((skill, index) => (
-            <div key={index}>
-                {/* Title */}
-                <div className="mb-2">
-                    {/*<div className="h-2 w-2 rounded-full bg-[#BB9476]"></div>*/}
-                    <p className="font-semibold text-lg text-black max-sm:text-base">
-                        {skill.title}{' '}
-                        {skill.description && (
-                            <span className="font-normal text-gray-500 text-sm max-sm:text-xs">
-                                ({skill.description})
-                            </span>
-                        )}
-                    </p>
+        {/* ICON CLOUD */}
+        <div className="flex flex-col md:flex-row gap-10 md:gap-16 w-full md:w-64">
+
+          {/* Desktop: two columns filling height */}
+          <div className="hidden md:flex flex-col justify-between h-full">
+            {leftColumnIcons.map((Icon, index) => (
+              <div
+                key={index}
+                className="hover:text-[#BB9476]/80 text-[#264E36] hover:scale-125 transition-all duration-300"
+              >
+                <Icon size={48} />
+              </div>
+            ))}
+          </div>
+          <div className="hidden md:flex flex-col justify-between h-full mt-6">
+            {rightColumnIcons.map((Icon, index) => (
+              <div
+                key={index}
+                className="hover:text-[#BB9476]/80 text-[#264E36] hover:scale-125 transition-all duration-300"
+              >
+                <Icon size={48} />
+              </div>
+            ))}
+          </div>
+
+          {/* Mobile: two rows (6 + 5) filling width */}
+          <div className="flex flex-col md:hidden gap-8 w-full mb-10">
+            <div className="flex justify-center flex-wrap gap-6 w-full">
+              {leftColumnIcons.map((Icon, index) => (
+                <div
+                  key={index}
+                  className="hover:text-[#BB9476]/80 text-[#264E36] hover:scale-110 transition-all duration-300 flex-1 flex justify-center"
+                >
+                  <Icon size={28} />
                 </div>
-
-                {/* Progress bar */}
-                <div className="flex items-center gap-4">
-                    <div className="w-full h-2.5 bg-gray-300 rounded-full overflow-hidden
-                    max-sm:h-1.5">
-                        <div className="h-full bg-[#BB9476] rounded-full" style={{width: `${skill.level}%` }}></div>
-                        <span className="text-md font-medium text-gray-700">{skill.level}%</span>
-                    </div>
-                    <span className="text-md font-medium text-gray-600 max-sm:text-sm">{skill.level}%</span>
-                </div>
+              ))}
             </div>
-            ))}    
+            <div className="flex justify-center flex-wrap gap-6 w-full">
+              {rightColumnIcons.map((Icon, index) => (
+                <div
+                  key={index}
+                  className="hover:text-[#BB9476]/80 text-[#264E36] hover:scale-110 transition-all duration-300 flex-1 flex justify-center"
+                >
+                  <Icon size={28} />
+                </div>
+              ))}
+            </div>
+          </div>
+
         </div>
 
+        {/* SKILLS */}
+        <div className="flex-1 space-y-12 md:space-y-16">
+          {skills.map((skill, index) => (
+            <div key={index}>
+              <p className="mb-2 text-lg font-semibold text-black">
+                {skill.title}{" "}
+                {skill.description && (
+                  <span className="text-sm font-normal text-gray-500">
+                    ({skill.description})
+                  </span>
+                )}
+              </p>
+
+              <div className="flex items-center gap-4">
+                <div className="w-full h-2.5 bg-gray-300 rounded-full overflow-hidden">
+                  <div
+                    className="h-full bg-[#BB9476] rounded-full"
+                    style={{ width: `${skill.level}%` }}
+                  />
+                </div>
+                <span className="text-sm font-medium text-gray-600">
+                  {skill.level}%
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+
+      </div>
     </section>
-  )
+  );
 }
 
-export default Skills
+export default Skills;
