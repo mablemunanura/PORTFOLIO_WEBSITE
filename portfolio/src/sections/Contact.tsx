@@ -23,7 +23,7 @@ export default function Contact() {
     // Replace with your EmailJS credentials
     const SERVICE_ID = "service_d465fvt";
     const TEMPLATE_ID = "YOUR_TEMPLATE_ID";
-    const USER_ID = "YOUR_PUBLIC_KEY";
+    const USER_ID = "pEiCp3tvT13DPmlKk";
 
     emailjs.send(SERVICE_ID, TEMPLATE_ID, formData, USER_ID)
       .then(
