@@ -24,30 +24,25 @@ export default function Footer(){
                 {/* Social icons */}
                 {/* CENTER */}
                 <div className="flex flex-col items-center">
-                <div className="flex gap-4 mb-4">
+                    <div className="flex gap-4 mb-4">
 
-                    <a href="https://github.com/mablemunanura" target="_blank" rel="noopener noreferrer">
-                    <Icon label="Github"><Github size={20} /></Icon>
-                    </a>
+                        <a href="https://github.com/mablemunanura" target="_blank" rel="noopener noreferrer">
+                        <Icon label="Github"><Github size={20} /></Icon>
+                        </a>
 
-                    <a href="mailto:mablemunanura@gmail.com" target="_blank" rel="noopener noreferrer">
-                    <Icon label="Mail"><Mail size={20} /></Icon>
-                    </a>
+                        <a href="mailto:mablemunanura@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <Icon label="Mail"><Mail size={20} /></Icon>
+                        </a>
 
-                    <a href="https://www.linkedin.com/in/mable-tusiime-a35374323/" target="_blank" rel="noopener noreferrer">
-                    <Icon label="LinkedIn"><Linkedin size={20} /></Icon>
-                    </a>
+                        <a href="https://www.linkedin.com/in/mable-tusiime-a35374323/" target="_blank" rel="noopener noreferrer">
+                        <Icon label="LinkedIn"><Linkedin size={20} /></Icon>
+                        </a>
 
-                    <a href="https://www.instagram.com/_.munanura._?igsh=MTZ3YXl4ZTFvM2w0cQ==" target="_blank" rel="noopener noreferrer">
-                    <Icon label="Instagram"><Instagram size={20} /></Icon>
-                    </a>
+                        <a href="https://www.instagram.com/_.munanura._?igsh=MTZ3YXl4ZTFvM2w0cQ==" target="_blank" rel="noopener noreferrer">
+                        <Icon label="Instagram"><Instagram size={20} /></Icon>
+                        </a>
 
-                </div>
-                <p className="text-sm text-gray-300 text-center leading-relaxed">
-                    © {new Date().getFullYear()} Mable. All Rights Reserved
-                    <br />
-                    <span className="text-xs">Designed by Mable Tusiime</span>
-                </p>
+                    </div>
                 </div>                
 
                 {/* Quick links */}
@@ -63,6 +58,14 @@ export default function Footer(){
                         ))}
                     </ul>
                 </div>
+            </div>
+
+            <div className="max-w-7xl mx-auto border-t-2 border-gray-400 mt-8 pt-4">
+                <p className="text-sm text-gray-300 text-center leading-relaxed">
+                    © {new Date().getFullYear()} Mable. All Rights Reserved
+                    <br />
+                    <span className="text-xs">Designed by Mable Tusiime</span>
+                </p>
             </div>
         </footer>
     );
