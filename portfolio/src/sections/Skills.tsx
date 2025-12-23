@@ -45,7 +45,7 @@ function Skills() {
 
   return (
     <section className="w-screen min-h-screen bg-[#f7f5f3] px-6 md:px-20 py-16">
-      <h2 className="mb-14 text-3xl font-bold text-center text-[#264E36]">
+      <h2 className="mb-14 text-3xl font-bold text-center text-[#264E36] text-shadow-lg">
         Skills
       </h2>
 

@@ -1,6 +1,7 @@
 import Hero from '../sections/Hero';
 import About from '../sections/About';
 import Skills from '../sections/Skills';
+import Resume from '../sections/Resume';
 
 function Portfolio() { 
 
@@ -14,6 +15,9 @@ function Portfolio() {
       </section>
       <section id="skills" className='overflow-x-hidden'>
         <Skills/>
+      </section>
+      <section id="resume" className='overflow-x-hidden'>
+        <Resume/>
       </section>
     </div>
   );
