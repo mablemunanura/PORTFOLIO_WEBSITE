@@ -77,19 +77,16 @@ export default function Contact() {
 
         <div className="flex flex-col lg:flex-row lg:space-x-8">
           {/* CONTACT CARDS */}
-          <div className="flex flex-col space-y-6 mb-10 lg:mb-0 lg:w-1/3 lg:h-auto">
-            <div className="flex flex-col justify-center items-center text-center p-6 rounded-2xl 
-              bg-white/20 backdrop-blur-md border border-gray-300 shadow-lg lg:flex-1">
+          <div className="flex flex-col space-y-6 mb-10 lg:mb-0 lg:w-1/3">
+            <div className="flex flex-col justify-center items-center text-center p-6 rounded-2xl bg-white/20 backdrop-blur-md border border-gray-300 shadow-lg">
               <Phone className="mb-2 text-[#264E36]" size={28} />
               <p className="font-semibold text-[#264E36]">Call me</p>
               <p className="text-gray-700 mt-1">+256 759 656 324</p>
             </div>
 
-            {/* Horizontal brown line between cards */}
             <div className="h-0.5 bg-[#BB9476] w-full lg:hidden"></div>
 
-            <div className="flex flex-col justify-center items-center text-center p-6 rounded-2xl 
-              bg-white/20 backdrop-blur-md border border-gray-300 shadow-lg lg:flex-1">
+            <div className="flex flex-col justify-center items-center text-center p-6 rounded-2xl bg-white/20 backdrop-blur-md border border-gray-300 shadow-lg">
               <Mail className="mb-2 text-[#264E36]" size={28} />
               <p className="font-semibold text-[#264E36]">Email me</p>
               <p className="text-gray-700 mt-1">mablemunanura@gmail.com</p>
@@ -110,14 +107,18 @@ export default function Contact() {
                 name="name"
                 required
                 placeholder="Your name"
-                className="border border-gray-300 rounded-md p-3 w-full focus:outline-none focus:ring-2 focus:ring-[#BB9476]"
+                className="border border-gray-300 rounded-md p-3 w-full
+                  placeholder-gray-500
+                  focus:outline-none focus:ring-2 focus:ring-[#BB9476]"
               />
               <input
                 name="email"
                 type="email"
                 required
                 placeholder="Your email"
-                className="border border-gray-300 rounded-md p-3 w-full focus:outline-none focus:ring-2 focus:ring-[#BB9476]"
+                className="border border-gray-300 rounded-md p-3 w-full
+                  placeholder-gray-500
+                  focus:outline-none focus:ring-2 focus:ring-[#BB9476]"
               />
             </div>
 
@@ -125,7 +126,9 @@ export default function Contact() {
               name="subject"
               required
               placeholder="Subject"
-              className="border border-gray-300 rounded-md p-3 w-full focus:outline-none focus:ring-2 focus:ring-[#BB9476] break-words"
+              className="border border-gray-300 rounded-md p-3 w-full
+                placeholder-gray-500
+                focus:outline-none focus:ring-2 focus:ring-[#BB9476]"
             />
 
             <textarea
@@ -133,7 +136,9 @@ export default function Contact() {
               required
               rows={5}
               placeholder="Your message"
-              className="border border-gray-300 rounded-md p-3 w-full focus:outline-none focus:ring-2 focus:ring-[#BB9476] break-words flex-1"
+              className="border border-gray-300 rounded-md p-3 w-full flex-1
+                placeholder-gray-500
+                focus:outline-none focus:ring-2 focus:ring-[#BB9476]"
             />
 
             <button
@@ -150,7 +155,9 @@ export default function Contact() {
               </p>
             )}
             {error && (
-              <p className="text-red-600 text-center font-medium">❌ {error}</p>
+              <p className="text-red-600 text-center font-medium">
+                ❌ {error}
+              </p>
             )}
           </form>
         </div>
