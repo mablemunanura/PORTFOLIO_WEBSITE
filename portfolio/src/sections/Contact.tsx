@@ -71,7 +71,7 @@ export default function Contact() {
   return (
     <section className="min-h-screen px-6 py-20 bg-[#f7f5f3]">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-center text-[#264E36] mb-12">
+        <h2 className="text-3xl font-bold text-center text-[#264E36] mb-12 text-shadow-lg">
           Contact Me
         </h2>
 
@@ -79,14 +79,15 @@ export default function Contact() {
           {/* CONTACT CARDS */}
           <div className="flex flex-col space-y-6 mb-10 lg:mb-0 lg:w-1/3">
             <div className=" border bg-white bg-opacity-20 backdrop-blur-md border-green-600/30 rounded-2xl p-6 flex flex-col items-center text-center max-w-full">
-              <Phone className="mb-2 text-[#264E36]" size={28} />
-              <p className="font-semibold text-[#264E36]">Call me</p>
+              <Phone className="mb-2 text-[#264E36]" size={30} />
+              <p className="font-semibold text-[#264E36] text-xl mb-2">Call me</p>
               <p className="text-gray-700 mt-1">+256 759 656 324</p>
+              <p className="text-gray-700 mt-1">+256 764 070 314</p>
             </div>
 
             <div className="border bg-white bg-opacity-20 backdrop-blur-md border-green-600/30 rounded-2xl p-6 flex flex-col items-center text-center max-w-full">
-              <Mail className="mb-2 text-[#264E36]" size={28} />
-              <p className="font-semibold text-[#264E36]">Email me</p>
+              <Mail className="mb-2 text-[#264E36]" size={30} />
+              <p className="font-semibold text-[#264E36] text-xl mb-2">Email me</p>
               <p className="text-gray-700 mt-1">mablemunanura@gmail.com</p>
             </div>
           </div>
@@ -102,14 +103,14 @@ export default function Contact() {
                 name="name"
                 required
                 placeholder="Your name"
-                className="border border-gray-300 rounded-md p-3 w-full focus:outline-none focus:ring-2 focus:ring-green-500"
+                className="border border-gray-300 rounded-md p-3 w-full focus:outline-none focus:ring-1 focus:ring-green-600"
               />
               <input
                 name="email"
                 type="email"
                 required
                 placeholder="Your email"
-                className="border border-gray-300 rounded-md p-3 w-full focus:outline-none focus:ring-2 focus:ring-green-500"
+                className="border border-gray-300 rounded-md p-3 w-full focus:outline-none focus:ring-1 focus:ring-green-600"
               />
             </div>
 
@@ -117,7 +118,7 @@ export default function Contact() {
               name="subject"
               required
               placeholder="Subject"
-              className="border border-gray-300 rounded-md p-3 w-full focus:outline-none focus:ring-2 focus:ring-green-500 break-words"
+              className="border border-gray-300 rounded-md p-3 w-full focus:outline-none focus:ring-1 focus:ring-green-600 break-words"
             />
 
             <textarea
@@ -125,13 +126,13 @@ export default function Contact() {
               required
               rows={5}
               placeholder="Your message"
-              className="border border-gray-300 rounded-md p-3 w-full focus:outline-none focus:ring-2 focus:ring-green-500 break-words"
+              className="border border-gray-300 rounded-md p-3 w-full focus:outline-none focus:ring-1 focus:ring-green-600 break-words"
             />
 
             <button
               type="submit"
               disabled={sending}
-              className="w-full bg-[#264E36] text-white py-3 rounded-md transition hover:bg-[#1f3a27]"
+              className="w-full bg-[#264E36] text-white py-3 rounded-md transition hover:bg-[#BB9476] hover:text-[#264E36] font-semibold"
             >
               {sending ? "Sending..." : "Send Message"}
             </button>
