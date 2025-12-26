@@ -87,7 +87,7 @@ function Resume() {
               {education.map((edu, index) => (
                 <div key={index} className="mb-8 ml-6 relative">
                     <div className="absolute -left-5 top-2 h-2 w-2 bg-[#BB9476] rounded-full" />
-                    <p className="font-semibold text-base md:text-lg">{edu.degree}</p>
+                    <p className="font-semibold text-gray-950 text-base md:text-lg">{edu.degree}</p>
                     <p className="text-gray-600 italic text-sm md:text-sm">{edu.institution}</p>
                     <p className="text-gray-500 italic text-xs md:text-sm">{edu.period}</p>
                 </div>
@@ -105,7 +105,7 @@ function Resume() {
             {experiences.map((exp, index) => (
               <div key={index} className="mb-8 ml-6 relative">
                 <div className="absolute -left-5 top-2 h-2 w-2 bg-[#BB9476] rounded-full" />
-                    <p className="font-semibold text-base md:text-lg">{exp.title}</p>
+                    <p className="font-semibold text-gray-950 text-base md:text-lg">{exp.title}</p>
                     <p className="text-gray-600 italic text-sm md:text-sm">{exp.company}</p>
                     <p className="text-gray-500 italic text-xs md:text-sm">{exp.period}</p>
                     <p className="mt-1.5 text-gray-700 text-sm md:text-base leading-relaxed">{exp.description}</p>
