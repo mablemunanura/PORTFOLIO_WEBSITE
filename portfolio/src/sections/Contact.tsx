@@ -75,42 +75,49 @@ export default function Contact() {
           Contact Me
         </h2>
 
-        <div className="flex flex-col lg:flex-row lg:space-x-12">
+        <div className="flex flex-col lg:flex-row lg:space-x-8">
           {/* CONTACT CARDS */}
-          <div className="flex flex-col space-y-6 mb-10 lg:mb-0 lg:w-1/3">
-            <div className=" border bg-white bg-opacity-20 backdrop-blur-md border-green-600/30 rounded-2xl p-6 flex flex-col items-center text-center max-w-full">
-              <Phone className="mb-2 text-[#264E36]" size={30} />
-              <p className="font-semibold text-[#264E36] text-xl mb-2">Call me</p>
+          <div className="flex flex-col space-y-6 mb-10 lg:mb-0 lg:w-1/3 lg:h-auto">
+            <div className="flex flex-col justify-center items-center text-center p-6 rounded-2xl 
+              bg-white/20 backdrop-blur-md border border-gray-300 shadow-lg lg:flex-1">
+              <Phone className="mb-2 text-[#264E36]" size={28} />
+              <p className="font-semibold text-[#264E36]">Call me</p>
               <p className="text-gray-700 mt-1">+256 759 656 324</p>
-              <p className="text-gray-700 mt-1">+256 764 070 314</p>
             </div>
 
-            <div className="border bg-white bg-opacity-20 backdrop-blur-md border-green-600/30 rounded-2xl p-6 flex flex-col items-center text-center max-w-full">
-              <Mail className="mb-2 text-[#264E36]" size={30} />
-              <p className="font-semibold text-[#264E36] text-xl mb-2">Email me</p>
+            {/* Horizontal brown line between cards */}
+            <div className="h-0.5 bg-[#BB9476] w-full lg:hidden"></div>
+
+            <div className="flex flex-col justify-center items-center text-center p-6 rounded-2xl 
+              bg-white/20 backdrop-blur-md border border-gray-300 shadow-lg lg:flex-1">
+              <Mail className="mb-2 text-[#264E36]" size={28} />
+              <p className="font-semibold text-[#264E36]">Email me</p>
               <p className="text-gray-700 mt-1">mablemunanura@gmail.com</p>
             </div>
           </div>
+
+          {/* VERTICAL DIVIDER */}
+          <div className="hidden lg:block w-0.5 bg-[#BB9476]"></div>
 
           {/* CONTACT FORM */}
           <form
             ref={formRef}
             onSubmit={sendEmail}
-            className="bg-white/80 backdrop-blur-lg border border-gray-200 rounded-2xl p-8 space-y-5 lg:w-2/3"
+            className="bg-white/20 backdrop-blur-md border border-gray-300 rounded-2xl p-8 space-y-5 lg:w-2/3 shadow-lg flex flex-col"
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <input
                 name="name"
                 required
                 placeholder="Your name"
-                className="border border-gray-300 rounded-md p-3 w-full focus:outline-none focus:ring-1 focus:ring-green-600"
+                className="border border-gray-300 rounded-md p-3 w-full focus:outline-none focus:ring-2 focus:ring-[#BB9476]"
               />
               <input
                 name="email"
                 type="email"
                 required
                 placeholder="Your email"
-                className="border border-gray-300 rounded-md p-3 w-full focus:outline-none focus:ring-1 focus:ring-green-600"
+                className="border border-gray-300 rounded-md p-3 w-full focus:outline-none focus:ring-2 focus:ring-[#BB9476]"
               />
             </div>
 
@@ -118,7 +125,7 @@ export default function Contact() {
               name="subject"
               required
               placeholder="Subject"
-              className="border border-gray-300 rounded-md p-3 w-full focus:outline-none focus:ring-1 focus:ring-green-600 break-words"
+              className="border border-gray-300 rounded-md p-3 w-full focus:outline-none focus:ring-2 focus:ring-[#BB9476] break-words"
             />
 
             <textarea
@@ -126,13 +133,13 @@ export default function Contact() {
               required
               rows={5}
               placeholder="Your message"
-              className="border border-gray-300 rounded-md p-3 w-full focus:outline-none focus:ring-1 focus:ring-green-600 break-words"
+              className="border border-gray-300 rounded-md p-3 w-full focus:outline-none focus:ring-2 focus:ring-[#BB9476] break-words flex-1"
             />
 
             <button
               type="submit"
               disabled={sending}
-              className="w-full bg-[#264E36] text-white py-3 rounded-md transition hover:bg-[#BB9476] hover:text-[#264E36] font-semibold"
+              className="w-full bg-[#264E36] text-white py-3 rounded-md transition hover:bg-[#1f3a27]"
             >
               {sending ? "Sending..." : "Send Message"}
             </button>
