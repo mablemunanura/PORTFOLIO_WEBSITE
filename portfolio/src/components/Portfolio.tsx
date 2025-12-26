@@ -4,6 +4,8 @@ import Skills from '../sections/Skills';
 import Resume from '../sections/Resume';
 import Contact from '../sections/Contact';
 import Services from '../sections/Services';
+import Portfolioo from '../sections/Portfolioo';
+import Testimonials from '../sections/Testimonials';
 
 function Portfolio() { 
 
@@ -15,6 +17,9 @@ function Portfolio() {
       <section id="about" className='overflow-x-hidden'>
         <About/>
       </section>
+      <section id="portfolioo" className='overflow-x-hidden'>
+        <Portfolioo/>
+      </section>
       <section id="skills" className='overflow-x-hidden'>
         <Skills/>
       </section>
@@ -23,6 +28,9 @@ function Portfolio() {
       </section>
       <section id="resume" className='overflow-x-hidden'>
         <Resume/>
+      </section>
+      <section id="testimonials" className='overflow-x-hidden'>
+        <Testimonials/>
       </section>
       <section id="contact" className='overflow-x-hidden'>
         <Contact/>
