@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 import Jenny from "../assets/Jenny.jpg";
 import Selina from "../assets/Selina.jpg";
+import Josh from "../assets/Josh.jpeg";
 
 type Testimonial = {
   name: string;
@@ -13,7 +14,7 @@ type Testimonial = {
 
 const testimonials: Testimonial[] = [
   {
-    name: "Jennifer Bukenya",
+    name: "Jennifer Bukenya Namyalo",
     role: "Software Engineer",
     photo: Jenny,
     message: "Mable is incredibly talented and delivers quality work efficiently.",
@@ -28,11 +29,11 @@ const testimonials: Testimonial[] = [
     rating: 5,
   },
   {
-    name: "Michael Lee",
-    role: "Project Manager",
-    photo: "/testimonials/michael.png",
-    message: "Highly recommend Mable for web and app development projects!",
-    rating: 5,
+    name: "Joshua Aryampa",
+    role: "Software Engineer",
+    photo: Josh,
+    message: "Mable's professionalism stands out. She combines strong full-stack skills with exceptional UI/UX design to deliver outstanding work.",
+    rating: 4,
   },
 ];
 
@@ -50,7 +51,7 @@ export default function Testimonials() {
 
   return (
     <section className="min-h-screen px-4 sm:px-6 lg:px-20 py-20 bg-[#f7f5f3] flex flex-col items-center">
-      <h2 className="text-3xl font-bold text-[#264E36] mb-12 text-center">
+      <h2 className="text-3xl font-bold text-[#264E36] mb-12 text-center text-shadow-lg">
         Testimonials
       </h2>
 
