@@ -2,6 +2,8 @@ import { useState } from "react";
 import { X } from "lucide-react";
 import Port from "../assets/PortfolioWebsite.png";
 import Restaurant1 from "../assets/Restaurant 1.png";
+import ToDo1 from "../assets/To Do 1.png";
+import ToDoVid from "../assets/To do video.mp4"
 
 // Example projects
 type Project = {
@@ -16,10 +18,10 @@ type Project = {
 const projects: Project[] = [
   {
     title: "To do App",
-    description: "Record and organize your music tracks efficiently.",
-    image: "/projects/music-app.png",
+    description: "Record and organize your tasks efficiently.",
+    image: ToDo1,
     category: "App Development",
-    video: "/projects/music-app-demo.mp4",
+    video: ToDoVid,
   },
   {
     title: "Portfolio Website",
@@ -30,7 +32,7 @@ const projects: Project[] = [
   },
   {
     title: "Restaurant Menu App",
-    description: "Full-stack e-commerce platform with React & Go.",
+    description: "Well designed and intuitive restaurant menu app interface.",
     image: Restaurant1,
     category: "UI/UX Design",
   },
