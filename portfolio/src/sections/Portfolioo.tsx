@@ -1,8 +1,27 @@
 import { useState } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
-import Port from "../assets/PortfolioWebsite.png";
+import Port1 from "../assets/Port 1.png";
+import Port2 from "../assets/Port 2.png";
+import Port3 from "../assets/Port 3.png";
+import Port4 from "../assets/Port 4.png";
+import Port5 from "../assets/Port 5.png";
+import Port6 from "../assets/Port 6.png";
+import Port7 from "../assets/Port 7.png";
+import Port8 from "../assets/Port 8.png";
+import Port9 from "../assets/Port 9.png";
 import Restaurant1 from "../assets/Restaurant 1.png";
+import Restaurant2 from "../assets/Restaurant 2.png";
+import Restaurant3 from "../assets/Restaurant 3.png";
+import Restaurant4 from "../assets/Restaurant 4.png";
+import Restaurant5 from "../assets/Restaurant 5.png";
+import Restaurant6 from "../assets/Restaurant 6.png";
+import Restaurant7 from "../assets/Restaurant 7.png";
+import Restaurant8 from "../assets/Restaurant 8.png";
+import Restaurant9 from "../assets/Restaurant 9.png";
 import ToDo1 from "../assets/To Do 1.png";
+import ToDo2 from "../assets/To Do 2.png";
+import ToDo3 from "../assets/To Do 3.png";
+import ToDo4 from "../assets/To Do 4.png";
 import ToDoVid from "../assets/To do video.mp4";
 
 type Project = {
@@ -21,23 +40,23 @@ const projects: Project[] = [
     description: "Record and organize your tasks efficiently.",
     image: ToDo1,
     category: "App Development",
-    images: [ToDo1, ToDo1, ToDo1],
+    images: [ToDo1, ToDo2, ToDo3, ToDo4],
     video: ToDoVid,
   },
   {
     title: "Portfolio Website",
     description: "Minimalist, responsive, and clean design.",
-    image: Port,
+    image: Port1,
     category: "Web Development",
-    images: [Port, Port],
+    images: [Port1, Port2, Port3, Port4, Port5, Port6, Port7, Port8, Port9],
     link: "#",
   },
   {
     title: "Restaurant Menu App",
-    description: "Well designed and intuitive restaurant menu app interface.",
+    description: "Well designed responsive and intuitive restaurant menu app interface.",
     image: Restaurant1,
     category: "UI/UX Design",
-    images: [Restaurant1, Restaurant1, Restaurant1, Restaurant1],
+    images: [Restaurant1, Restaurant2, Restaurant3, Restaurant4, Restaurant5, Restaurant6, Restaurant7, Restaurant8, Restaurant9],
   },
 ];
 
@@ -74,7 +93,7 @@ export default function Portfolio() {
   return (
     <section className="min-h-screen px-6 py-20 bg-[#f7f5f3]">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-center text-[#264E36] mb-12">
+        <h2 className="text-3xl font-bold text-center text-[#264E36] mb-12 text-shadow-lg">
           Portfolio
         </h2>
 
