@@ -120,14 +120,14 @@ export default function Testimonials() {
         {/* Navigation buttons */}
         <button
           onClick={prev}
-          className="absolute -left-2 md:-left-6 top-1/2 -translate-y-1/2 w-10 h-10 md:w-14 md:h-14 rounded-full bg-[#BB9476] hover:bg-[#a17860] flex items-center justify-center shadow-md"
+          className="absolute -left-2 md:-left-6 top-1/2 -translate-y-1/2 w-10 h-10 md:w-14 md:h-14 rounded-full bg-[#BB9476] hover:bg-[#a17860] flex items-center justify-center shadow-md z-50"
         >
           <ChevronLeft size={20} className="text-white" />
         </button>
 
         <button
           onClick={next}
-          className="absolute -right-2 md:-right-6 top-1/2 -translate-y-1/2 w-10 h-10 md:w-14 md:h-14 rounded-full bg-[#BB9476] hover:bg-[#a17860] flex items-center justify-center shadow-md"
+          className="absolute -right-2 md:-right-6 top-1/2 -translate-y-1/2 w-10 h-10 md:w-14 md:h-14 rounded-full bg-[#BB9476] hover:bg-[#a17860] flex items-center justify-center shadow-md z-50"
         >
           <ChevronRight size={20} className="text-white" />
         </button>
