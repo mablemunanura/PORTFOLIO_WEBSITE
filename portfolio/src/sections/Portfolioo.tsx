@@ -120,7 +120,7 @@ export default function Portfolio() {
           {filteredProjects.map((project, idx) => (
             <div
               key={idx}
-              className="bg-white/30 backdrop-blur-md border border-gray-300 rounded-2xl overflow-hidden flex flex-col hover:scale-[1.02] transition"
+              className="bg-white/30 backdrop-blur-md border border-gray-300 text-gray-600 rounded-2xl overflow-hidden flex flex-col hover:scale-[1.02] transition"
             >
               <img
                 src={project.image}

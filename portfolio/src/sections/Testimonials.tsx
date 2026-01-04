@@ -102,7 +102,7 @@ export default function Testimonials() {
                 size={16}
                 className={
                   idx < testimonials[currentIndex].rating
-                    ? "text-yellow-400"
+                    ? "text-yellow-400 fill-yellow-400"
                     : "text-gray-300"
                 }
               />
