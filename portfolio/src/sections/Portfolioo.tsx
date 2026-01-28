@@ -23,6 +23,9 @@ import ToDo2 from "../assets/To Do 2.png";
 import ToDo3 from "../assets/To Do 3.png";
 import ToDo4 from "../assets/To Do 4.png";
 import ToDoVid from "../assets/To do video.mp4";
+import Graphic1 from "../assets/Graphic 1.png";
+import Graphic2 from "../assets/Graphic 2.png";
+import Graphic3 from "../assets/Graphic 3.png";
 
 type Project = {
   title: string;
@@ -58,9 +61,30 @@ const projects: Project[] = [
     category: "UI/UX Design",
     images: [Restaurant1, Restaurant2, Restaurant3, Restaurant4, Restaurant5, Restaurant6, Restaurant7, Restaurant8, Restaurant9],
   },
+  {
+    title: "E-flyers",
+    description: "Quality flyers and posters for your business or event.",
+    image: Graphic1,
+    category: "Graphic Design",
+    images: [Graphic1],
+  },
+  {
+    title: "E-flyers",
+    description: "Quality flyers and posters for your business or event.",
+    image: Graphic2,
+    category: "Graphic Design",
+    images: [Graphic2],
+  },
+  {
+    title: "E-flyers",
+    description: "Quality flyers and posters for your business or event.",
+    image: Graphic3,
+    category: "Graphic Design",
+    images: [Graphic3],
+  },
 ];
 
-const categories = ["All", "Web Development", "App Development", "UI/UX Design"];
+const categories = ["All", "Web Development", "App Development", "UI/UX Design", "Graphic Design"];
 
 export default function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState("All");
