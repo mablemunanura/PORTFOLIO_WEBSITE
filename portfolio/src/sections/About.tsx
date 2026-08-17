@@ -67,7 +67,7 @@ function About() {
                 <div className="w-2 h-2 bg-[#BB9476] rounded-full mr-6"></div>
               </td>
               <th>Age:</th>
-              <td>21</td>
+              <td>22</td>
             </tr>
 
             <tr>
