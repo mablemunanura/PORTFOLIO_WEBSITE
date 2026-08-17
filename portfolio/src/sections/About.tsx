@@ -115,7 +115,7 @@ function About() {
           </div>
 
           <div>
-            <h1 className="text-[#BB9476] text-7xl font-bold max-md:text-6xl">2+</h1>
+            <h1 className="text-[#BB9476] text-7xl font-bold max-md:text-6xl">3+</h1>
             <p className="text-[#264E36] text-2xl  max-md:text-xl">
               Years of <br/> experience
             </p>
